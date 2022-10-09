@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
 /* Variables */
 :root {
     --main: #16A195;
@@ -5,7 +7,7 @@
     --shade2: #1CC7B9;
     --textcolor: #fc5000;
     --bahnschrift: 'Bahnschrift';
-    --fredoka: 'Fredoka One';
+    --fredoka: 'Fredoka One', cursive;
     --gilroy: 'Gilroy';
     box-sizing: border-box;
 }
@@ -30,7 +32,8 @@ a:hover {
 }
 
 .wrapper {
-    margin: 0px 170px;
+    margin: 0px auto;
+    max-width: 1680px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -68,6 +71,7 @@ h2 {
 .hero {
     /* background-color: green; */
     padding: 0px;
+    padding-top: 50px;
     margin: 50px 180px;
     display: flex;
     flex-direction: row;
@@ -150,15 +154,15 @@ hr {
     text-decoration: underline 10px dotted;
 }
 
-.about-subhead{
+.about-subhead {
     font-family: var(--gilroy);
     font-size: 3rem;
-    display:flex ;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.about-section{
+.about-section {
     padding: 3rem;
     display: flex;
     flex-direction: column;
@@ -194,13 +198,11 @@ hr {
 }
 
 .skill h5 {
-    font-weight: 800;
     margin: 0px;
     color: #d34808;
-    
 }
 
-.skill ul{
+.skill ul {
     padding: 0px;
     list-style: none;
     display: flex;
@@ -239,7 +241,7 @@ hr {
     font-weight: 800;
     margin: 0px;
     color: #d34808;
-    
+
 }
 
 .edu-wrapper {
@@ -271,13 +273,66 @@ hr {
 .edu h5 {
     margin: 0px;
     color: #d34808;
-    
+
 }
 
 
 .edu p {
-    margin: 0px;
     color: whitesmoke;
-    font-size: 1.3rem;
-    
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 1080px) {
+    .edu-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .skill-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .wrapper {
+        max-width: 972px;
+        margin: 0px auto;
+    }
+
+    .nav-link {
+        margin-right: 10px;
+    }
+
+    .navbar {
+        max-width: 90%;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding-top: 0px;
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .skill ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skill ul li {
+        padding: 0px 20px;
+    }
+
 }
