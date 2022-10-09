@@ -74,7 +74,7 @@ h2 {
 }
 
 .main-page {
-    min-height: calc(100vh - (6.25rem + 4.875rem));
+    min-height: calc(100vh - (6.0625rem + 4.875rem));
     display: flex;
     flex-direction: column;
     justify-content: center;
