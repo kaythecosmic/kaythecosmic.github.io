@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@500&display=swap');
+
 
 /* Variables */
 :root {
@@ -333,6 +334,11 @@ hr {
 
     .skill ul li {
         padding: 0px 20px;
+    }
+
+    :root {
+        --gilroy: 'Montserrat';
+        box-sizing: border-box;
     }
 
 }
