@@ -1,0 +1,283 @@
+/* Variables */
+:root {
+    --main: #16A195;
+    --shade1: #083b36;
+    --shade2: #1CC7B9;
+    --textcolor: #fc5000;
+    --bahnschrift: 'Bahnschrift';
+    --fredoka: 'Fredoka One';
+    --gilroy: 'Gilroy';
+    box-sizing: border-box;
+}
+
+body {
+    background: whitesmoke;
+    color: whitesmoke;
+    margin: 0px;
+    color: var(--textcolor);
+    font-family: var(--gilroy);
+    font-size: 1.7rem;
+}
+
+a {
+    color: var(--textcolor);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--main);
+    transition: 0.35s ease-in-out all;
+}
+
+.wrapper {
+    margin: 0px 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    padding: 0px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-links {
+    width: 18vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+h1,
+h2 {
+    margin: 0px;
+    font-size: 3.5rem;
+}
+
+.main-page {
+    min-height: calc(100vh - (6.25rem + 4.875rem));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero {
+    /* background-color: green; */
+    padding: 0px;
+    margin: 50px 180px;
+    display: flex;
+    flex-direction: row;
+    min-height: 30vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.hero-image {
+    width: 20rem;
+    border-radius: 10%;
+}
+
+.hero-text {
+    height: 10rem;
+}
+
+.hero-part {
+    padding: 0.8rem;
+    margin: 0.5rem;
+}
+
+hr {
+    color: var(--main);
+    border: 4px solid var(--main);
+    border-radius: 5px;
+}
+
+.divider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+}
+
+.div-hr-1 {
+    width: 0.1px;
+}
+
+.div-hr-2 {
+    width: calc(100vw - 1000px);
+}
+
+
+
+.page-footer {
+    color: var(--shade1);
+    border-radius: 1.5rem 1.5rem 0rem 0rem;
+    background: var(--main);
+    padding: 1rem;
+}
+
+.footer-center {
+
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-center a {
+    color: var(--shade1);
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.about-header h1 {
+    font-family: var(--fredoka);
+    font-size: 5rem;
+    text-decoration: underline 10px dotted;
+}
+
+.about-subhead{
+    font-family: var(--gilroy);
+    font-size: 3rem;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.skill-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    font-family: var(--main);
+    padding: 2rem;
+}
+
+.skill {
+    background: var(--shade1);
+    border-radius: 0.8rem;
+    text-align: center;
+    color: whitesmoke;
+    transition: 0.2s ease-in-out all;
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+
+.skill:hover {
+    background: var(--shade2);
+    color: var(--shade1);
+    transition: 0.2s ease-in-out all;
+    cursor: pointer;
+}
+
+.skill h5 {
+    font-weight: 800;
+    margin: 0px;
+    color: #d34808;
+    
+}
+
+.skill ul{
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    font-family: var(--main);
+    padding: 2rem;
+}
+
+.contact-card:hover {
+    background: var(--shade2);
+    color: var(--shade1);
+    transition: 0.2s ease-in-out all;
+    cursor: pointer;
+}
+
+.contact-card {
+    background: var(--shade1);
+    border-radius: 0.8rem;
+    text-align: center;
+    color: whitesmoke;
+    transition: 0.2s ease-in-out all;
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+.contact-card h5 {
+    font-weight: 800;
+    margin: 0px;
+    color: #d34808;
+    
+}
+
+.edu-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    font-family: var(--main);
+    padding: 2rem;
+}
+
+.edu {
+    background: var(--shade1);
+    border-radius: 0.8rem;
+    text-align: center;
+    color: whitesmoke;
+    transition: 0.2s ease-in-out all;
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+
+.edu:hover {
+    background: var(--shade2);
+    color: var(--shade1);
+    transition: 0.2s ease-in-out all;
+    cursor: pointer;
+}
+
+.edu h5 {
+    margin: 0px;
+    color: #d34808;
+    
+}
+
+
+.edu p {
+    margin: 0px;
+    color: whitesmoke;
+    font-size: 1.3rem;
+    
+}
