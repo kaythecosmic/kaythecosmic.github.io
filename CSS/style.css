@@ -46,6 +46,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
 }
 
 .navbar {
@@ -63,7 +64,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    /* padding: 1rem; */
 }
 
 h1,
