@@ -184,8 +184,7 @@ hr {
 
 
 .skill-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
     gap: 2rem;
     font-family: var(--main);
     padding: 2rem;
@@ -302,8 +301,7 @@ hr {
     }
 
     .skill-wrapper {
-        display: grid;
-        grid-template-columns: 1fr;
+        flex-direction: column;
         gap: 1.5rem;
     }
 
